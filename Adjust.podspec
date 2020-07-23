@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
   s.tvos.deployment_target = '9.0'
   s.framework      = 'SystemConfiguration'
-  s.ios.weak_framework = 'AdSupport', 'iAd', 'CoreTelephony'
-  s.tvos.weak_framework = 'AdSupport'
+  s.ios.weak_framework = 'iAd', 'CoreTelephony'
   s.requires_arc   = true
   s.default_subspec = 'Core'
   s.pod_target_xcconfig = { 'BITCODE_GENERATION_MODE' => 'bitcode' }
